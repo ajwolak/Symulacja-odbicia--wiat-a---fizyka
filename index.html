@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arkadiusz Wolak" />
+    <link rel="shortcut icon" href="sun.png" />
+    <title>Symulacja odbicia światła</title>
+    <!-- Poniżej załączenie styli do wyglądu strony -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Symulacja odbicia światła</h2>
+    <div class="description">
+      <p>
+        Symulacja przedstawia zjawisko odbicia światła od powierzchni płaskiej
+        zgodnie z prawem optyki:
+        <strong>kąt padania = kąt odbicia</strong>. Oznacza to, że światło
+        padające na powierzchnię pod określonym kątem odbija się w kierunku
+        przeciwnym pod dokładnie takim samym kątem względem normalnej (prostej
+        prostopadłej do powierzchni).
+      </p>
+      <p>
+        W tej symulacji użytkownik może regulować kąt padania promienia
+        świetlnego za pomocą suwaka. W wyniku tego zmienia się również kierunek
+        promienia odbitego, co jest wizualizowane na ekranie. Linia przerywana
+        przedstawia normalną do powierzchni, natomiast żółte i pomarańczowe
+        linie reprezentują odpowiednio promień padający i promień odbity.
+      </p>
+    </div>
+    <div>
+      <label for="angle">Kąt padania: </label>
+      <br />
+      <!-- Input w którym wybieramy kąt padania światła -->
+      <input
+        type="range"
+        id="angle"
+        min="0"
+        max="90"
+        value="45"
+        oninput="draw()"
+      />
+    </div>
+    <span id="angleValue">45°</span>
+    <div class="container">
+      <!-- Miejsce, w którym będzie widoczna symulacja -->
+      <canvas id="canvas" width="1000" height="700"></canvas>
+      <!-- Legenda -->
+      <div class="legend">
+        <div><span style="background-color: gold"></span> Promień padający</div>
+        <div><span style="background-color: orange"></span> Promień odbity</div>
+        <div><span style="background-color: gray"></span> Linia</div>
+      </div>
+    </div>
+    <!-- Poniżej załączenie skryptów potrzebnych do symulacji -->
+    <script src="script.js"></script>
+  </body>
+</html>
