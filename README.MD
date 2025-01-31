@@ -1,0 +1,3 @@
+Symulacja przedstawia zjawisko odbicia światła od powierzchni płaskiej zgodnie z prawem optyki: kąt padania = kąt odbicia. Oznacza to, że światło padające na powierzchnię pod określonym kątem odbija się w kierunku przeciwnym pod dokładnie takim samym kątem względem normalnej (prostej prostopadłej do powierzchni).
+
+W tej symulacji użytkownik może regulować kąt padania promienia świetlnego za pomocą suwaka. W wyniku tego zmienia się również kierunek promienia odbitego, co jest wizualizowane na ekranie. Linia przerywana przedstawia normalną do powierzchni, natomiast żółte i pomarańczowe linie reprezentują odpowiednio promień padający i promień odbity.
